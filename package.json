@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build":"rm -rf dist && parcel build index.html --no-minify --public-url ./"
+  },
+  "name": "GousonDirection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Gouson/GousonDirection.git",
+  "author": "'Gouson' <'gouson@qq.com'>",
+  "license": "MIT"
+}
