@@ -1,10 +1,13 @@
 const $siteList = $('.siteList')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
-window.hashMap = xObject ? xObject : [
-    { url: 'https://www.acfun.cn', shortCut: 'acfun' },
-    { url: 'https://www.bilibili.com', shortCut: 'bili' },
-    { url: 'https://xiedaimala.com/', shortCut: 'sdml' }
+window.hashMap = xObject.length !== 0 ? xObject : [
+    { url: "https://www.acfun.cn", shortCut: "acfun" },
+    { url: "https://www.bilibili.com/", shortCut: "bili" },
+    { url: "https://xiedaimala.com/", shortCut: "xiedaimala" },
+    { url: "https://flatuicolors.com/", shortCut: "color" },
+    { url: "https://www.iconfont.cn", shortCut: "icon" },
+    { url: "https://docs.qq.com/", shortCut: "doc" }
 ]
 const simpleUrl = (url) => {
     return url.replace('https://', '').replace('http://', '').replace(/\/.*/, '')
