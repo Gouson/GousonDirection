@@ -1,5 +1,4 @@
-{
-  "scripts": {
+{  "scripts": {
     "build":"rm -rf dist && parcel build index.html --no-minify --public-url ./"
   },
   "name": "GousonDirection",

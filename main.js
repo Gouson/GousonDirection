@@ -1,7 +1,7 @@
 const $siteList = $('.siteList')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
-window.hashMap = xObject ? xObject : [
+window.hashMap = (xObject && xObject.length!==0) ? xObject : [
     { url: "https://www.acfun.cn", shortCut: "acfun" },
     { url: "https://www.bilibili.com/", shortCut: "bili" },
     { url: "https://xiedaimala.com/", shortCut: "xiedaimala" },
