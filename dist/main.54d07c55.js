@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var $siteList = $('.siteList');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
-window.hashMap = xObject.length !== 0 ? xObject : [{
+window.hashMap = xObject ? xObject : [{
   url: "https://www.acfun.cn",
   shortCut: "acfun"
 }, {
@@ -259,4 +259,4 @@ $('.searchForm>svg').on('click', function () {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.4017cde9.js.map
+//# sourceMappingURL=main.54d07c55.js.map
